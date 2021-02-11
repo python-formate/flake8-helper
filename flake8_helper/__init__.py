@@ -29,7 +29,7 @@ A helper library for Flake8 plugins.
 # stdlib
 import ast
 from abc import ABC, abstractmethod
-from typing import Iterator, List, Tuple, Type, TypeVar
+from typing import Generic, Iterator, List, Tuple, Type, TypeVar
 
 __all__ = ["Visitor", "_P", "Plugin"]
 
@@ -40,6 +40,7 @@ __version__: str = "0.1.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
 _P = TypeVar("_P", bound="Plugin")
+_V = TypeVar("_V", bound="Visitor")
 
 
 class Visitor(ast.NodeVisitor):
@@ -66,7 +67,7 @@ class Visitor(ast.NodeVisitor):
 				))
 
 
-class Plugin(ABC):
+class Plugin(ABC, Generic[_V]):
 	"""
 	Abstract base class for Flake8 plugins.
 
@@ -110,6 +111,15 @@ class Plugin(ABC):
 
 		raise NotImplementedError
 
+	@property
+	@abstractmethod
+	def visitor_class(self) -> Type[_V]:
+		"""
+		The visitor class to use to traverse the AST.
+		"""
+
+		raise NotImplementedError
+
 	def run(self: _P) -> Iterator[Tuple[int, int, str, Type[_P]]]:
 		"""
 		Traverse the Abstract Syntax Tree and identify errors.
@@ -117,7 +127,7 @@ class Plugin(ABC):
 		Yields a tuple of (line number, column offset, error message, type(self))
 		"""
 
-		visitor = Visitor()
+		visitor: _V = self.visitor_class()
 		visitor.visit(self._tree)
 
 		for line, col, msg in visitor.errors:
