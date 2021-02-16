@@ -36,6 +36,7 @@ extra_sphinx_extensions:
  - sphinx_toolbox.flake8
 
 sphinx_html_theme: furo
+docs_fail_on_warning: true
 
 keywords:
  - flake8

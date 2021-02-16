@@ -31,7 +31,7 @@ import ast
 from abc import ABC, abstractmethod
 from typing import Generic, Iterator, List, Tuple, Type, TypeVar
 
-__all__ = ["Visitor", "_P", "Plugin"]
+__all__ = ["_V", "Visitor", "_P", "Plugin"]
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
