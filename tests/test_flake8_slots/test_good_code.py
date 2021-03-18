@@ -3,8 +3,6 @@ import ast
 
 # 3rd party
 import pytest
-
-# this package
 from flake8_slots import Plugin, Visitor
 
 string_a = "\nclass String(str): __slots__ = ['foo']"

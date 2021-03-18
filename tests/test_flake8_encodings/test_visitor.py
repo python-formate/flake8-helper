@@ -4,8 +4,6 @@ from textwrap import dedent
 
 # 3rd party
 from coincidence.regressions import AdvancedDataRegressionFixture
-
-# this package
 from flake8_encodings import Visitor
 
 
