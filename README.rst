@@ -18,7 +18,7 @@ flake8-helper
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
+	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
 	* - PyPI
 	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Anaconda
@@ -61,6 +61,10 @@ flake8-helper
 .. |requires| image:: https://requires.io/github/domdfcoding/flake8-helper/requirements.svg?branch=master
 	:target: https://requires.io/github/domdfcoding/flake8-helper/requirements/?branch=master
 	:alt: Requirements Status
+
+.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/flake8-helper/master?logo=coveralls
+	:target: https://coveralls.io/github/domdfcoding/flake8-helper?branch=master
+	:alt: Coverage
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/flake8-helper?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/flake8-helper

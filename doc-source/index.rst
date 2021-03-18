@@ -10,113 +10,118 @@ flake8-helper
 
 .. start shields
 
-.. list-table::
-	:stub-columns: 1
-	:widths: 10 90
+.. only:: html
 
-	* - Docs
-	  - |docs| |docs_check|
-	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
-	* - PyPI
-	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
-	* - Anaconda
-	  - |conda-version| |conda-platform|
-	* - Activity
-	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
-	* - QA
-	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
-	* - Other
-	  - |license| |language| |requires|
+	.. list-table::
+		:stub-columns: 1
+		:widths: 10 90
 
-.. |docs| rtfd-shield::
-	:project: flake8-helper
-	:alt: Documentation Build Status
+		* - Docs
+		  - |docs| |docs_check|
+		* - Tests
+		  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
+		* - PyPI
+		  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
+		* - Anaconda
+		  - |conda-version| |conda-platform|
+		* - Activity
+		  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
+		* - QA
+		  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
+		* - Other
+		  - |license| |language| |requires|
 
-.. |docs_check| actions-shield::
-	:workflow: Docs Check
-	:alt: Docs Check Status
+	.. |docs| rtfd-shield::
+		:project: flake8-helper
+		:alt: Documentation Build Status
 
-.. |actions_linux| actions-shield::
-	:workflow: Linux
-	:alt: Linux Test Status
+	.. |docs_check| actions-shield::
+		:workflow: Docs Check
+		:alt: Docs Check Status
 
-.. |actions_windows| actions-shield::
-	:workflow: Windows
-	:alt: Windows Test Status
+	.. |actions_linux| actions-shield::
+		:workflow: Linux
+		:alt: Linux Test Status
 
-.. |actions_macos| actions-shield::
-	:workflow: macOS
-	:alt: macOS Test Status
+	.. |actions_windows| actions-shield::
+		:workflow: Windows
+		:alt: Windows Test Status
 
-.. |actions_flake8| actions-shield::
-	:workflow: Flake8
-	:alt: Flake8 Status
+	.. |actions_macos| actions-shield::
+		:workflow: macOS
+		:alt: macOS Test Status
 
-.. |actions_mypy| actions-shield::
-	:workflow: mypy
-	:alt: mypy status
+	.. |actions_flake8| actions-shield::
+		:workflow: Flake8
+		:alt: Flake8 Status
 
-.. |requires| requires-io-shield::
-	:alt: Requirements Status
+	.. |actions_mypy| actions-shield::
+		:workflow: mypy
+		:alt: mypy status
 
-.. |codefactor| codefactor-shield::
-	:alt: CodeFactor Grade
+	.. |requires| requires-io-shield::
+		:alt: Requirements Status
 
-.. |pypi-version| pypi-shield::
-	:project: flake8-helper
-	:version:
-	:alt: PyPI - Package Version
+	.. |coveralls| coveralls-shield::
+		:alt: Coverage
 
-.. |supported-versions| pypi-shield::
-	:project: flake8-helper
-	:py-versions:
-	:alt: PyPI - Supported Python Versions
+	.. |codefactor| codefactor-shield::
+		:alt: CodeFactor Grade
 
-.. |supported-implementations| pypi-shield::
-	:project: flake8-helper
-	:implementations:
-	:alt: PyPI - Supported Implementations
+	.. |pypi-version| pypi-shield::
+		:project: flake8-helper
+		:version:
+		:alt: PyPI - Package Version
 
-.. |wheel| pypi-shield::
-	:project: flake8-helper
-	:wheel:
-	:alt: PyPI - Wheel
+	.. |supported-versions| pypi-shield::
+		:project: flake8-helper
+		:py-versions:
+		:alt: PyPI - Supported Python Versions
 
-.. |conda-version| image:: https://img.shields.io/conda/v/domdfcoding/flake8-helper?logo=anaconda
-	:target: https://anaconda.org/domdfcoding/flake8-helper
-	:alt: Conda - Package Version
+	.. |supported-implementations| pypi-shield::
+		:project: flake8-helper
+		:implementations:
+		:alt: PyPI - Supported Implementations
 
-.. |conda-platform| image:: https://img.shields.io/conda/pn/domdfcoding/flake8-helper?label=conda%7Cplatform
-	:target: https://anaconda.org/domdfcoding/flake8-helper
-	:alt: Conda - Platform
+	.. |wheel| pypi-shield::
+		:project: flake8-helper
+		:wheel:
+		:alt: PyPI - Wheel
 
-.. |license| github-shield::
-	:license:
-	:alt: License
+	.. |conda-version| image:: https://img.shields.io/conda/v/domdfcoding/flake8-helper?logo=anaconda
+		:target: https://anaconda.org/domdfcoding/flake8-helper
+		:alt: Conda - Package Version
 
-.. |language| github-shield::
-	:top-language:
-	:alt: GitHub top language
+	.. |conda-platform| image:: https://img.shields.io/conda/pn/domdfcoding/flake8-helper?label=conda%7Cplatform
+		:target: https://anaconda.org/domdfcoding/flake8-helper
+		:alt: Conda - Platform
 
-.. |commits-since| github-shield::
-	:commits-since: v0.1.1
-	:alt: GitHub commits since tagged version
+	.. |license| github-shield::
+		:license:
+		:alt: License
 
-.. |commits-latest| github-shield::
-	:last-commit:
-	:alt: GitHub last commit
+	.. |language| github-shield::
+		:top-language:
+		:alt: GitHub top language
 
-.. |maintained| maintained-shield:: 2021
-	:alt: Maintenance
+	.. |commits-since| github-shield::
+		:commits-since: v0.1.1
+		:alt: GitHub commits since tagged version
 
-.. |pypi-downloads| pypi-shield::
-	:project: flake8-helper
-	:downloads: month
-	:alt: PyPI - Downloads
+	.. |commits-latest| github-shield::
+		:last-commit:
+		:alt: GitHub last commit
 
-.. |pre_commit_ci| pre-commit-ci-shield::
-	:alt: pre-commit.ci status
+	.. |maintained| maintained-shield:: 2021
+		:alt: Maintenance
+
+	.. |pypi-downloads| pypi-shield::
+		:project: flake8-helper
+		:downloads: month
+		:alt: PyPI - Downloads
+
+	.. |pre_commit_ci| pre-commit-ci-shield::
+		:alt: pre-commit.ci status
 
 .. end shields
 
@@ -154,8 +159,10 @@ Installation
 
 .. start links
 
-View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
+.. only:: html
 
-`Browse the GitHub Repository <https://github.com/domdfcoding/flake8-helper>`__
+	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
+
+	`Browse the GitHub Repository <https://github.com/domdfcoding/flake8-helper>`__
 
 .. end links
