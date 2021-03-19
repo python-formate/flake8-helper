@@ -13,9 +13,6 @@ dynamic = [ "requires-python", "classifiers", "dependencies",]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
 
-[tool.importcheck]
-always = [ "flake8_helper",]
-
 [project.license]
 file = "LICENSE"
 
