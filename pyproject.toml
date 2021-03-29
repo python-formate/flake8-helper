@@ -1,6 +1,6 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
 
 [project]
 name = "flake8-helper"
@@ -9,9 +9,11 @@ description = "A helper library for Flake8 plugins."
 readme = "README.rst"
 keywords = [ "flake8",]
 dynamic = [ "requires-python", "classifiers", "dependencies",]
+
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+
 
 [project.license]
 file = "LICENSE"
@@ -21,3 +23,17 @@ Homepage = "https://github.com/domdfcoding/flake8-helper"
 "Issue Tracker" = "https://github.com/domdfcoding/flake8-helper/issues"
 "Source Code" = "https://github.com/domdfcoding/flake8-helper"
 Documentation = "https://flake8-helper.readthedocs.io/en/latest"
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Flake8",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython", "PyPy",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+package = "flake8_helper"
