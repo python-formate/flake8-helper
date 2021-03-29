@@ -4,7 +4,7 @@ flake8-helper
 
 .. start short_desc
 
-**A helper library for Flake8 plugins.**
+.. documentation-summary::
 
 .. end short_desc
 
