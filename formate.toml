@@ -39,6 +39,7 @@ known_third_party = [
     "flake8",
     "flake8_encodings",
     "flake8_slots",
+    "importlib_metadata",
     "pytest",
     "pytest_cov",
     "pytest_randomly",
