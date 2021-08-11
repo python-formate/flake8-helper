@@ -136,6 +136,13 @@ Installation
 
 .. end installation
 
+
+Contents
+-----------
+
+.. html-section::
+
+
 .. toctree::
 	:hidden:
 
@@ -147,6 +154,7 @@ Installation
 
 	api/*
 	Source
+	license
 
 .. sidebar-links::
 	:caption: Links

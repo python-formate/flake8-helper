@@ -78,3 +78,4 @@ def setup(app):
 
 
 nitpicky = True
+autosummary_widths_builders = ["latex"]

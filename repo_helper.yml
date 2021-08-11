@@ -39,6 +39,9 @@ classifiers:
 extra_sphinx_extensions:
  - sphinx_toolbox.pre_commit
  - sphinx_toolbox.flake8
+ - sphinx_toolbox_experimental.html_section
+ - sphinx_toolbox_experimental.autosummary_widths
+ - sphinx_toolbox_experimental.needspace
 
 keywords:
  - flake8
@@ -48,3 +51,4 @@ exclude_files:
 
 sphinx_conf_epilogue:
  - nitpicky = True
+ - autosummary_widths_builders = ["latex"]
