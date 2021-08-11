@@ -5,7 +5,9 @@ copyright_years: "2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 version: "0.1.1"
-username: "domdfcoding"
+username: "python-formate"
+assignee: "domdfcoding"
+primary_conda_channel: "domdfcoding"
 license: 'MIT'
 short_desc: "A helper library for Flake8 plugins."
 
@@ -40,6 +42,9 @@ extra_sphinx_extensions:
 
 keywords:
  - flake8
+
+exclude_files:
+ - contributing
 
 sphinx_conf_epilogue:
  - nitpicky = True

@@ -3,13 +3,13 @@ Downloading source code
 =========================
 
 The ``flake8-helper`` source code is available on GitHub,
-and can be accessed from the following URL: https://github.com/domdfcoding/flake8-helper
+and can be accessed from the following URL: https://github.com/python-formate/flake8-helper
 
 If you have ``git`` installed, you can clone the repository with the following command:
 
 .. prompt:: bash
 
-	git clone https://github.com/domdfcoding/flake8-helper
+	git clone https://github.com/python-formate/flake8-helper
 
 .. parsed-literal::
 

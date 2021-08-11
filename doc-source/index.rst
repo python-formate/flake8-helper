@@ -143,16 +143,9 @@ Installation
 
 .. toctree::
 	:maxdepth: 3
-	:caption: API Reference
 	:glob:
 
 	api/*
-
-.. toctree::
-	:maxdepth: 3
-	:caption: Contributing
-
-	contributing
 	Source
 
 .. sidebar-links::
@@ -160,6 +153,7 @@ Installation
 	:github:
 	:pypi: flake8-helper
 
+	Contributing Guide<https://contributing-to-formate.readthedocs.io>
 
 .. start links
 
@@ -167,6 +161,6 @@ Installation
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	:github:repo:`Browse the GitHub Repository <domdfcoding/flake8-helper>`
+	:github:repo:`Browse the GitHub Repository <python-formate/flake8-helper>`
 
 .. end links
