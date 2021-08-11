@@ -5,13 +5,16 @@ copyright_years: "2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 version: "0.1.1"
-username: "domdfcoding"
+username: "python-formate"
+assignee: "domdfcoding"
+primary_conda_channel: "domdfcoding"
 license: 'MIT'
 short_desc: "A helper library for Flake8 plugins."
 
 min_coverage: 100
 python_deploy_version: 3.6
 sphinx_html_theme: furo
+mypy_version: "0.910"
 docs_fail_on_warning: true
 use_whey: true
 
@@ -37,9 +40,16 @@ classifiers:
 extra_sphinx_extensions:
  - sphinx_toolbox.pre_commit
  - sphinx_toolbox.flake8
+ - sphinx_toolbox_experimental.html_section
+ - sphinx_toolbox_experimental.autosummary_widths
+ - sphinx_toolbox_experimental.needspace
 
 keywords:
  - flake8
 
+exclude_files:
+ - contributing
+
 sphinx_conf_epilogue:
  - nitpicky = True
+ - autosummary_widths_builders = ["latex"]
