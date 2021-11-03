@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "flake8-helper"
-version = "0.1.1"
+version = "0.2.0"
 description = "A helper library for Flake8 plugins."
 readme = "README.rst"
 keywords = [ "flake8",]
@@ -136,6 +136,13 @@ show_error_codes = true
 [tool.snippet-fmt]
 directives = [ "code-block",]
 
+[tool.whey-pth]
+name = "flake8_helper.pth"
+pth-content = "# Ensure these are imported before the current directory appears on path\nimport code\nimport doctest\n"
+
+[tool.whey.builders]
+wheel = "whey_pth_wheel"
+
 [tool.dependency-dash."requirements.txt"]
 order = 10
 
@@ -156,10 +163,3 @@ reformat = true
 [tool.snippet-fmt.languages.ini]
 
 [tool.snippet-fmt.languages.json]
-
-[tool.whey-pth]
-name = "flake8_helper.pth"
-pth-content = "# Ensure these are imported before the current directory appears on path\nimport code\nimport doctest\n"
-
-[tool.whey.builders]
-wheel = "whey_pth_wheel"
