@@ -1,5 +1,5 @@
 [build-system]
-requires = [ "whey",]
+requires = [ "whey", "whey-pth",]
 build-backend = "whey"
 
 [project]
@@ -156,3 +156,10 @@ reformat = true
 [tool.snippet-fmt.languages.ini]
 
 [tool.snippet-fmt.languages.json]
+
+[tool.whey-pth]
+name = "flake8_helper.pth"
+pth-content = "# Ensure these are imported before the current directory appears on path\nimport code\nimport doctest\n"
+
+[tool.whey.builders]
+wheel = "whey_pth_wheel"
