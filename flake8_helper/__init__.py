@@ -52,7 +52,7 @@ class Visitor(ast.NodeVisitor):
 		#: The list of Flake8 errors identified by the visitor.
 		self.errors: List[Tuple[int, int, str]] = []
 
-	def report_error(self, node: ast.AST, error: str):
+	def report_error(self, node: ast.AST, error: str) -> None:
 		"""
 		Report an error for the given node.
 
