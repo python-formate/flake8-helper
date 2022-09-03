@@ -60,8 +60,8 @@ flake8-helper
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/python-formate/flake8-helper/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/python-formate/flake8-helper/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/python-formate/flake8-helper/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/python-formate/flake8-helper/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
