@@ -42,7 +42,7 @@ extra_sphinx_extensions:
  - sphinx_toolbox.pre_commit
  - sphinx_toolbox.flake8
  - sphinx_toolbox.more_autosummary.column_widths
- - sphinx-favicon
+ - sphinx_favicon
 
 keywords:
  - flake8
