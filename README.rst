@@ -101,7 +101,7 @@ flake8-helper
 .. |language| image:: https://img.shields.io/github/languages/top/python-formate/flake8-helper
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/python-formate/flake8-helper/v0.2.1
+.. |commits-since| image:: https://img.shields.io/github/commits-since/python-formate/flake8-helper/v0.2.2
 	:target: https://github.com/python-formate/flake8-helper/pulse
 	:alt: GitHub commits since tagged version
 
