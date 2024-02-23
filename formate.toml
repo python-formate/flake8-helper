@@ -45,4 +45,4 @@ known_third_party = [
     "pytest_randomly",
     "pytest_timeout",
 ]
-known_first_party = "flake8_helper"
+known_first_party = [ "flake8_helper",]
