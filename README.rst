@@ -109,7 +109,7 @@ flake8-helper
 	:target: https://github.com/python-formate/flake8-helper/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2024
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2025
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake8-helper
