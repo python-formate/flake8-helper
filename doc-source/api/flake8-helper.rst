@@ -6,3 +6,4 @@
 
 .. automodule:: flake8_helper
 	:member-order: bysource
+	:private-members:

@@ -40,6 +40,8 @@ __version__: str = "0.2.2"
 __email__: str = "dominic@davis-foster.co.uk"
 
 _P = TypeVar("_P", bound="Plugin")
+
+#: TypeVar for :class:`~.Visitor` and subclasses.
 _V = TypeVar("_V", bound="Visitor")
 
 
