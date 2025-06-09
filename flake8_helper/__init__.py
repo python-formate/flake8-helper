@@ -63,8 +63,8 @@ class Visitor(ast.NodeVisitor):
 		"""
 
 		self.errors.append((
-				node.lineno,
-				node.col_offset,
+				node.lineno,  # type: ignore[attr-defined]
+				node.col_offset,  # type: ignore[attr-defined]
 				error,
 				))
 
