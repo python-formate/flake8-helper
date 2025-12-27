@@ -69,7 +69,7 @@ class Visitor(ast.NodeVisitor):
 				))
 
 
-class Plugin(ABC, Generic[_V]):
+class Plugin(ABC, Generic[_V]):  # noqa: PRM003
 	"""
 	Abstract base class for Flake8 plugins.
 
